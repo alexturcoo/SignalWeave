@@ -5,6 +5,48 @@
 ![SignalWeave Architecture](imgs/overall_workflow.png)
 ---
 
+# Key File Output Locations
+
+Below are important project assets and where they are located within the repository.
+
+**Path references: Knowledge Library**
+
+- `knowledge_library/AML-Knowledge-Library.xlsx`
+- `knowledge_library/business_red_flag.xlsx`
+- `knowledge_library/individual_red_flag.xlsx`
+
+These serve as:
+- Source material for labeling functions
+- Regulatory-aligned signal definitions
+- Business vs individual risk rule encoding
+
+**Path references: Customer Risk Scores From Model**
+
+- `scripts/data/final/business_output.csv`
+- `scripts/data/final/individual_output.csv`
+
+These contain:
+- Predicted AML risk scores
+- Model outputs after weak supervision + XGBoost
+- Final formatted results for evaluation or submission
+
+**Path references: Model Processing and Training**
+
+- `scripts/01_master_dataframe.ipynb`
+- `scripts/02_univariate_analysis.ipynb`
+- `scripts/03_select_features.ipynb`
+- `scripts/04_train_models.ipynb`	
+
+These contain:
+- Master dataset construction and preprocessing
+- Feature signal validation and univariate analysis
+- Collinearity reduction and final feature selection
+- Model training (XGBoost/CatBoost), evaluation, and SHAP explainability
+
+**Path references: Final .pptx Presentation**
+
+---
+
 ## Overview
 
 SignalWeave is a data-centric Anti–Money Laundering (AML) framework designed to detect suspicious financial behavior in partially labeled or unlabeled datasets.
