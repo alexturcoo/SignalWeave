@@ -211,3 +211,5 @@ This sheet is informational and does not introduce additional model features or 
 - Typology-based structure used for clarity  
 - No speculative indicators or unused features included  
 
+## Ackowledgements 
+We would like to sincerely thank Scotiabank for sponsoring this case and for providing the dataset. We also extend our gratitude to The Institute of Management & Innovation and the BIGDataAIHUB for making this opportunity possible.
