@@ -90,11 +90,11 @@ The fraud data provided to us faces a serious data bottleneck problem. In order 
 
 The second business problem was ensuring model interpretability, as transparency is crucial for understanding why customers were flagged for fraud. This was addressed by using XGBoost in combination with SHAP values. XGBoost allowed us to capture complex, non-linear patterns in fraud detection, while SHAP provided a transparent, per-customer explanation for each fraud prediction.
 
+---
+
 # AML Knowledge Library
 
 ## Overview
-
----
 
 The AML Knowledge Library is a structured, Excel-based reference framework that documents money laundering (ML) indicators and links them directly to implemented model features.
 
@@ -105,7 +105,6 @@ The library is designed to:
 - Demonstrate structured alignment with authoritative AML guidance  
 
 The focus is on clarity, usability, and defensibility.
-
 
 ## Workbook Structure
 
