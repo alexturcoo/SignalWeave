@@ -65,13 +65,6 @@ If Snorkel is not already installed, you can install it using: `pip install snor
 
 Link to the website: https://www.snorkel.org/ 
 
----
-
-## Business Problems 
-The fraud data provided to us faces a serious data bottleneck problem. In order to train a stable downstream model, the training dataset must be expanded. However, hand labelling is time-consuming and costly. Our approach addresses this by using Snorkel, where domain knowledge was directly encoded into Labelling Functions (LFs).
-
-The second business problem was ensuring model interpretability, as transparency is crucial for understanding why customers were flagged for fraud. This was addressed by using XGBoost in combination with SHAP values. XGBoost allowed us to capture complex, non-linear patterns in fraud detection, while SHAP provided a transparent, per-customer explanation for each fraud prediction.
-
 ## SHAP (SHapley Additive exPlanations)
 SHAP is an open-source explainability framework grounded in cooperative
 game theory. It assigns each feature a contribution value for an
@@ -91,6 +84,11 @@ transparency.
 If SHAP is not already installed, you can install it using: `pip install shap`
 
 Link to the documentation: https://shap.readthedocs.io/
+
+## Business Problems 
+The fraud data provided to us faces a serious data bottleneck problem. In order to train a stable downstream model, the training dataset must be expanded. However, hand labelling is time-consuming and costly. Our approach addresses this by using Snorkel, where domain knowledge was directly encoded into Labelling Functions (LFs).
+
+The second business problem was ensuring model interpretability, as transparency is crucial for understanding why customers were flagged for fraud. This was addressed by using XGBoost in combination with SHAP values. XGBoost allowed us to capture complex, non-linear patterns in fraud detection, while SHAP provided a transparent, per-customer explanation for each fraud prediction.
 
 # AML Knowledge Library
 
