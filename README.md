@@ -2,7 +2,7 @@
 ### A Weakly Supervised, Interpretable AML Risk Scoring Framework
 
 > Weaving regulatory intelligence and behavioral signals into a scalable, transparent fraud detection system.
-
+![SignalWeave Architecture](imgs/overall_workflow.png)
 ---
 
 ## 📌 Overview
