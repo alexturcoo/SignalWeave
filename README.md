@@ -44,6 +44,7 @@ These contain:
 - Model training (XGBoost/CatBoost), evaluation, and SHAP explainability
 
 **Path references: Final .pptx Presentation**
+- `final_pptx/Team-16-BigData-Case-PPT.pdf`
 
 ---
 
