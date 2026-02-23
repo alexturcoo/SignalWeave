@@ -54,3 +54,141 @@ This allows:
 ---
 
 ## 🏗 System Architecture
+
+
+# AML Knowledge Library
+
+## Overview
+
+The AML Knowledge Library is a structured, Excel-based reference framework that documents money laundering (ML) indicators and links them directly to implemented model features.
+
+The library is designed to:
+- Provide traceability between AML risk indicators and engineered features  
+- Support model transparency and explainability  
+- Assist investigative and analytical interpretation of model outputs  
+- Demonstrate structured alignment with authoritative AML guidance  
+
+The focus is on clarity, usability, and defensibility.
+
+---
+
+## Workbook Structure
+
+The Excel workbook contains two sheets:
+
+1. **AML Knowledge**  
+2. **High Risk Industries**
+
+Each sheet serves a distinct purpose.
+
+---
+
+## AML Knowledge Sheet
+
+This is the core knowledge library. Each row represents an AML indicator mapped to a feature used in the final model.
+
+### Columns
+
+- **indicator_id**  
+  Unique identifier assigned to each AML indicator.
+
+- **segment**  
+  Indicates whether the indicator applies to:
+  - Business  
+  - Personal  
+  - Personal & Business  
+
+- **supporting_information**  
+  A concise description of the suspicious behavior, pattern, or risk rationale.  
+  This field summarizes regulatory guidance or typology-based reasoning.
+
+- **typology**  
+  The money laundering typology associated with the indicator (e.g., Structuring, Layering, Placement, Shell Company).
+
+- **feature**  
+  The exact feature name used in the trained model.  
+  All features listed are implemented features; no theoretical or unused features are included.
+
+- **feature_logic**  
+  A plain-language description of what the feature measures and how it captures the behavior described in the indicator.
+
+- **citation**  
+  The authoritative source supporting the indicator or typology (e.g., FINTRAC, FATF, academic literature).
+
+---
+
+## Methodology
+
+### Indicator Identification
+Indicators were identified using established AML guidance and typology literature. Each indicator reflects a behavioral pattern, transactional characteristic, or contextual signal commonly associated with ML risk.
+
+### Typology Classification
+Each indicator is categorized under a recognized AML typology to support structured interpretation and consistency.
+
+### Feature Mapping
+Each indicator is mapped directly to a feature used in the final model.  
+Only indicators supported by implemented features were retained.
+
+### Traceability
+Each entry includes a citation to ensure traceability and defensibility.
+
+---
+
+## High Risk Industries Sheet
+
+The **High Risk Industries** sheet provides a reference list of industries commonly associated with elevated money laundering risk.
+
+Purpose of this sheet:
+- Provide contextual awareness for business accounts  
+- Support qualitative risk assessment  
+- Complement indicator-level analysis  
+
+This sheet is informational and does not introduce additional model features or scoring logic.
+
+---
+
+## How the Library Can Be Used
+
+### For Modelling Experts
+- Understand how AML indicators are operationalized through features  
+- Support model explainability and documentation  
+- Validate alignment between guidance and implementation  
+
+### For Investigators
+- Interpret why specific behaviors are flagged  
+- Link model features to recognized AML typologies  
+- Support investigative reasoning and reporting  
+
+### For Compliance and Review
+- Demonstrate structured use of AML guidance  
+- Support transparency and auditability  
+- Provide clear documentation of indicator rationale  
+
+---
+
+## Design Decisions
+
+- Excel format selected for accessibility and ease of querying  
+- Feature names strictly match implemented model features  
+- Citations included directly in the library  
+- Typology-based structure used for clarity  
+- No speculative indicators or unused features included  
+
+---
+
+## Scope and Limitations
+
+- The library reflects only the indicators and features present in the final model  
+- It does not represent a complete AML compliance program  
+- It supports, but does not replace, professional judgment  
+
+---
+
+## Alignment With Case Requirements
+
+This AML Knowledge Library meets the project requirements by providing:
+- A structured and easy-to-query representation  
+- Clear documentation of methodology  
+- Traceability to authoritative AML sources  
+- Support for both modelling and investigative use cases  
+- Emphasis on clarity and usability  
