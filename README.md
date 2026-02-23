@@ -90,6 +90,9 @@ The fraud data provided to us faces a serious data bottleneck problem. In order 
 
 The second business problem was ensuring model interpretability, as transparency is crucial for understanding why customers were flagged for fraud. This was addressed by using XGBoost in combination with SHAP values. XGBoost allowed us to capture complex, non-linear patterns in fraud detection, while SHAP provided a transparent, per-customer explanation for each fraud prediction.
 
+## Labelling Functions (LFs)
+For a detailed look at our LFs please refer to: knowledge_library/business_red_flag AND knowledge_library/individual_red_flag
+
 ## Tradeoffs & Future Recommendations
 Our approach binarized the weak labels into 0 and 1 using a threshold of 0.5. This means that weak labels with scores of 0.55 and 0.95 are treated the same, which may reduce the probabilistic signal produced by Snorkel. However, this was partially mitigated because our Labelling Functions (LFs) were highly precise, and the majority of the weak labels generated were strongly polarized.
 
