@@ -84,10 +84,10 @@ Each sheet serves a distinct purpose.
 ---
 
 ## Snorkel AI
-Snorkel AI originated as an open-source research project in 2015 at the Stanford AI Lab. Snorkel is desighned to adress data bottlenecks through programmatic labeling. 
-Snorkel uses Labelling Functions (LFs) to assign probalisitc weak labels to unlabelled data. Through conflict and agreement of the LFs the model is able to learn which LFs are more trustworthy.
+Snorkel AI originated as an open-source research project in 2015 at the Stanford AI Lab. Snorkel is designed to address data bottlenecks through programmatic labelling.
+Snorkel uses Labelling Functions (LFs) to assign probabilistic weak labels to unlabelled data. Through conflict and agreement of the LFs the model is able to learn which LFs are more trustworthy.
 The result is a weakly labelled dataset that is used to expand the training set.
-Snorkel AI has been used by a variety of fortune 500 companies & goverment agencies.
+Snorkel AI has been used by a variety of Fortune 500 companies & government agencies.
 
 If Snorkel is not already installed, you can install it using: pip install snorkel
 
