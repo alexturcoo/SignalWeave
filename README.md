@@ -90,6 +90,11 @@ The fraud data provided to us faces a serious data bottleneck problem. In order 
 
 The second business problem was ensuring model interpretability, as transparency is crucial for understanding why customers were flagged for fraud. This was addressed by using XGBoost in combination with SHAP values. XGBoost allowed us to capture complex, non-linear patterns in fraud detection, while SHAP provided a transparent, per-customer explanation for each fraud prediction.
 
+## Tradeoffs & Future Recommendations
+Our approach binarized the weak labels into 0 and 1 using a threshold of 0.5. This means that weak labels with scores of 0.55 and 0.95 are treated the same, which may reduce the probabilistic signal produced by Snorkel. However, this was partially mitigated because our Labelling Functions (LFs) were highly precise, and the majority of the weak labels generated were strongly polarized.
+
+In future work, we would aim to repeat the same experiment with two key changes. First, we would expand the LFs to be broader and increase their coverage. Second, instead of binarizing the probabilistic labels, we would retain them as continuous values and train a regression model rather than a classification model. The results from this approach could then be compared against the current implementation to evaluate potential performance improvements.
+
 # AML Knowledge Library
 
 ## Overview
