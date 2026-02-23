@@ -55,34 +55,6 @@ This allows:
 
 ## 🏗 System Architecture
 
-
-# AML Knowledge Library
-
-## Overview
-
-The AML Knowledge Library is a structured, Excel-based reference framework that documents money laundering (ML) indicators and links them directly to implemented model features.
-
-The library is designed to:
-- Provide traceability between AML risk indicators and engineered features  
-- Support model transparency and explainability  
-- Assist investigative and analytical interpretation of model outputs  
-- Demonstrate structured alignment with authoritative AML guidance  
-
-The focus is on clarity, usability, and defensibility.
-
----
-
-## Workbook Structure
-
-The Excel workbook contains two sheets:
-
-1. **AML Knowledge**  
-2. **High Risk Industries**
-
-Each sheet serves a distinct purpose.
-
----
-
 ## Snorkel AI
 Snorkel AI originated as an open-source research project in 2015 at the Stanford AI Lab. Snorkel is designed to address data bottlenecks through programmatic labelling.
 Snorkel uses Labelling Functions (LFs) to assign probabilistic weak labels to unlabelled data. Through conflict and agreement of the LFs the model is able to learn which LFs are more trustworthy.
@@ -114,6 +86,33 @@ transparency.
 If SHAP is not already installed, you can install it using: `pip install shap`
 
 Link to the documentation: https://shap.readthedocs.io/
+
+# AML Knowledge Library
+
+## Overview
+
+The AML Knowledge Library is a structured, Excel-based reference framework that documents money laundering (ML) indicators and links them directly to implemented model features.
+
+The library is designed to:
+- Provide traceability between AML risk indicators and engineered features  
+- Support model transparency and explainability  
+- Assist investigative and analytical interpretation of model outputs  
+- Demonstrate structured alignment with authoritative AML guidance  
+
+The focus is on clarity, usability, and defensibility.
+
+---
+
+## Workbook Structure
+
+The Excel workbook contains two sheets:
+
+1. **AML Knowledge**  
+2. **High Risk Industries**
+
+Each sheet serves a distinct purpose.
+
+---
 
 ## AML Knowledge Sheet
 
