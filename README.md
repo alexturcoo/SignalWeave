@@ -1,4 +1,4 @@
-# 🧵 SignalWeave  
+# 🧵 SignalWeave - Team 16
 ### A Weakly Supervised, Interpretable AML Risk Scoring Framework
 
 > Weaving regulatory intelligence and behavioral signals into a scalable, transparent fraud detection system.
