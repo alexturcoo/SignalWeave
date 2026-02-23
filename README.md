@@ -89,9 +89,31 @@ Snorkel uses Labelling Functions (LFs) to assign probalisitc weak labels to unla
 The result is a weakly labelled dataset that is used to expand the training set.
 Snorkel AI has been used by a variety of fortune 500 companies & goverment agencies.
 
-If Snorkel is not already installed, you can install it using: pip install snorkel
+If Snorkel is not already installed, you can install it using: `pip install snorkel`
 
 Link to the website: https://www.snorkel.org/ 
+
+---
+
+## SHAP (SHapley Additive exPlanations)
+SHAP is an open-source explainability framework grounded in cooperative
+game theory. It assigns each feature a contribution value for an
+individual prediction, allowing complex machine learning models to be
+interpreted in a transparent and consistent manner.
+
+In SignalWeave, SHAP is used to explain the outputs of gradient-boosted
+tree models (XGBoost / CatBoost) by quantifying how each engineered AML
+feature increases or decreases a customer's risk score.
+
+SHAP enables both global and local interpretability. Globally, it
+identifies which behavioral indicators most influence model decisions
+across the portfolio. Locally, it provides case-level explanations that
+support investigative review, audit defensibility, and regulatory
+transparency.
+
+If SHAP is not already installed, you can install it using: `pip install shap`
+
+Link to the documentation: https://shap.readthedocs.io/
 
 ## AML Knowledge Sheet
 
