@@ -94,6 +94,8 @@ The second business problem was ensuring model interpretability, as transparency
 
 ## Overview
 
+---
+
 The AML Knowledge Library is a structured, Excel-based reference framework that documents money laundering (ML) indicators and links them directly to implemented model features.
 
 The library is designed to:
@@ -104,7 +106,6 @@ The library is designed to:
 
 The focus is on clarity, usability, and defensibility.
 
----
 
 ## Workbook Structure
 
@@ -115,7 +116,6 @@ The Excel workbook contains two sheets:
 
 Each sheet serves a distinct purpose.
 
----
 
 ## AML Knowledge Sheet
 
@@ -149,7 +149,6 @@ This is the core knowledge library. Each row represents an AML indicator mapped 
 - **citation**  
   The authoritative source supporting the indicator or typology (e.g., FINTRAC, FATF, academic literature).
 
----
 
 ## Methodology
 
@@ -166,7 +165,6 @@ Only indicators supported by implemented features were retained.
 ### Traceability
 Each entry includes a citation to ensure traceability and defensibility.
 
----
 
 ## High Risk Industries Sheet
 
@@ -179,7 +177,6 @@ Purpose of this sheet:
 
 This sheet is informational and does not introduce additional model features or scoring logic.
 
----
 
 ## How the Library Can Be Used
 
@@ -198,7 +195,6 @@ This sheet is informational and does not introduce additional model features or 
 - Support transparency and auditability  
 - Provide clear documentation of indicator rationale  
 
----
 
 ## Design Decisions
 
