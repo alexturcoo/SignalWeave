@@ -5,7 +5,7 @@
 ![SignalWeave Architecture](imgs/overall_workflow.png)
 ---
 
-## 📌 Overview
+## Overview
 
 SignalWeave is a data-centric Anti–Money Laundering (AML) framework designed to detect suspicious financial behavior in partially labeled or unlabeled datasets.
 
@@ -17,16 +17,16 @@ Traditional AML systems rely heavily on:
 
 SignalWeave addresses these challenges by combining:
 
-- 🧠 Regulatory-informed feature engineering  
-- 🏷 Weak supervision using Snorkel  
-- 🌲 Gradient-boosted decision trees (XGBoost / CatBoost)  
-- 🔍 SHAP-based explainability  
+-  Regulatory-informed feature engineering  
+-  Weak supervision using Snorkel  
+-  Gradient-boosted decision trees (XGBoost / CatBoost)  
+-  SHAP-based explainability  
 
 The result is a probabilistic AML risk score that balances detection performance with regulatory transparency.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 SignalWeave was built to:
 
@@ -38,7 +38,7 @@ SignalWeave was built to:
 
 ---
 
-## 🧠 Core Philosophy: Data-Centric AI
+## Core Philosophy: Data-Centric AI
 
 Instead of focusing only on model complexity, SignalWeave prioritizes improving supervision quality.
 
@@ -53,7 +53,7 @@ This allows:
 
 ---
 
-## 🏗 System Architecture
+## System Architecture
 
 ## Snorkel AI
 Snorkel AI originated as an open-source research project in 2015 at the Stanford AI Lab. Snorkel is designed to address data bottlenecks through programmatic labelling.
